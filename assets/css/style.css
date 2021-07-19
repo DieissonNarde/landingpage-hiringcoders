@@ -8,6 +8,7 @@
 .banner {
   height: 100vh;
   width: 100%;
+  background-color: #ffc300;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,17 +16,21 @@
 }
 
 .banner h1 {
-  
+  color: #fa000e;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .banner img {
-  margin-top: 40px;
-  width: 30%;
+  margin-top: 60px;
+  width: 40%;
 }
 
 .container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 40px auto;
+  margin-top: 80px;
 }
 
 .cards {
@@ -47,7 +52,7 @@
 
   flex-grow: 1;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
   color: inherit;
 }
 
@@ -70,21 +75,73 @@
 .card p {
   margin-top: 8px;
   font-size: 22px;
-  color: green;
+  color: #3cb54a;
 }
 
-.form-content form {
-  display: grid;
-  width: 420px;
-  margin: 0 auto;
+.form-content {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 84px 0;
+  
+  background-image: url('../img/back.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .form-content form input {
   width: 100%;
   height: 48px;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   padding: 0 22px;
-  border: 2px solid green;
   border-radius: 8px;
+  outline: 0;
+}
+
+.form-content form .input-text {
+  border: 1px solid #3cb54a;
   color: black;
+}
+
+.form-content form .input-text:hover {
+  filter: brightness(0.9);
+}
+
+.form-content form .input-text:focus {
+  border: 2px solid #3cb54a;
+}
+
+.form-content form .button {
+  background-color: #3cb54a;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  transition: filter 0.2s;
+}
+
+.form-content form .button:hover {
+  filter: brightness(0.9);
+}
+
+#form-result p {
+  font-size: 32px;
+  color: #3cb54a;
+  text-align: center;
+}
+
+footer {
+  margin-top: 40px;
+  height: 80px;
+  padding: 25px;
+  font-size: 20px;
+  text-align: center;
+  
+  color: #fa000e;
 }
