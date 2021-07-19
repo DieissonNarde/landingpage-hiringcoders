@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Otomanopee One', sans-serif;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h1 {
+  
+}
+
+.banner img {
+  margin-top: 40px;
+  width: 30%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  padding: 24px;
+  margin: 8px;
+
+  flex-grow: 1;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  color: inherit;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 90%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.card h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.card p {
+  margin-top: 8px;
+  font-size: 22px;
+  color: green;
+}
+
+.form-content form {
+  display: grid;
+  width: 420px;
+  margin: 0 auto;
+}
+
+.form-content form input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 10px;
+  padding: 0 22px;
+  border: 2px solid green;
+  border-radius: 8px;
+  color: black;
+}
